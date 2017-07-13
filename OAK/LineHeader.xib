@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LineHeader" id="iN0-l3-epB" customClass="LineHeader" customModule="OASurgical" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0m-Ay-cPF">
+                    <rect key="frame" x="289" y="0.0" width="21" height="40"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                    <color key="textColor" red="0.82352941176470584" green="0.45098039215686275" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Patient" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXF-n4-afD">
+                    <rect key="frame" x="123" y="0.0" width="134" height="40"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.32156862749999998" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="F0m-Ay-cPF" secondAttribute="trailing" constant="10" id="0y2-3N-mtk"/>
+                <constraint firstAttribute="bottom" secondItem="NXF-n4-afD" secondAttribute="bottom" id="2ZI-E1-M4T"/>
+                <constraint firstItem="F0m-Ay-cPF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3rk-2V-Fhw"/>
+                <constraint firstItem="NXF-n4-afD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="67i-1E-Jgx"/>
+                <constraint firstAttribute="bottom" secondItem="F0m-Ay-cPF" secondAttribute="bottom" id="uAA-Um-b0x"/>
+                <constraint firstItem="F0m-Ay-cPF" firstAttribute="leading" secondItem="NXF-n4-afD" secondAttribute="trailing" constant="32" id="uUk-R0-fn2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lbl_count" destination="F0m-Ay-cPF" id="Imj-Aw-EKA"/>
+                <outlet property="lbl_name" destination="NXF-n4-afD" id="kvx-ry-qpm"/>
+            </connections>
+            <point key="canvasLocation" x="-126" y="85"/>
+        </view>
+    </objects>
+</document>
